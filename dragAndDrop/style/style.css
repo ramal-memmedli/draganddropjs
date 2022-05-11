@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element-box {
+    width: 992px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.draggable-element {
+    width: 4rem;
+    height: 4rem;
+    transition: .5s;
+    transition-property: transform, border-radius;
+}
+
+.draggable-element:hover {
+    cursor: grab;
+}
+
+
+.draggable-element.dragging {
+    position: absolute;
+}
+
+.draggable-element.circle {
+    border-radius: 50%;
+}
+
+.droppable-area {
+    width: 992px;
+    height: 25rem;
+    margin: 2rem auto;
+    background-color: #DDD;
+}
